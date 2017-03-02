@@ -40,25 +40,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RayTracer.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RayTracer.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/documentation/RayTracer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="199" column="9" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="199" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="577">
+              <caret line="379" column="0" lean-forward="true" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+                <element signature="e#0#15098#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mathutils.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mathutils.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/mathutils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="62" column="44" lean-forward="true" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+            <state relative-caret-position="254">
+              <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#Vector#0" expanded="false" />
-                <element signature="n#!!block;n#MakeXYZ#0;n#Vector#0" expanded="false" />
-                <element signature="n#!!block;n#MakeFromString#0;n#Vector#0" expanded="false" />
+                <element signature="n#!!block;n#CreateXYZ#0;n#Vector#0" expanded="false" />
+                <element signature="n#!!block;n#CreateFromString#0;n#Vector#0" expanded="false" />
+                <element signature="n#Color#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -67,10 +77,16 @@
       <file leaf-file-name="entities.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/entities.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="102">
+              <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
               <folding>
                 <element signature="n#!!doc;n#Entity#0" expanded="false" />
+                <element signature="n#Entity#0" expanded="false" />
+                <element signature="n#SceneEntity#0" expanded="false" />
+                <element signature="n#Camera#0" expanded="false" />
+                <element signature="n#Light#0" expanded="false" />
+                <element signature="n#ISect#0" expanded="false" />
+                <element signature="n#Surface#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -104,8 +120,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/raytracer.js" />
         <option value="$PROJECT_DIR$/js/app.js" />
-        <option value="$PROJECT_DIR$/js/entities.js" />
         <option value="$PROJECT_DIR$/js/mathutils.js" />
+        <option value="$PROJECT_DIR$/js/entities.js" />
       </list>
     </option>
   </component>
@@ -278,18 +294,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488391393024</updated>
-      <workItem from="1488391394350" duration="3912000" />
+      <workItem from="1488391394350" duration="8718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3912000" />
+    <option name="totallyTimeSpent" value="8718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="128" y="38" width="1615" height="952" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984147" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -326,16 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/raytracer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -346,32 +352,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/mathutils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="65" column="0" lean-forward="true" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#Vector#0" expanded="false" />
+            <element signature="n#!!block;n#CreateXYZ#0;n#Vector#0" expanded="false" />
+            <element signature="n#!!block;n#CreateFromString#0;n#Vector#0" expanded="false" />
+            <element signature="n#Color#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/entities.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="38" column="27" lean-forward="false" selection-start-line="38" selection-start-column="27" selection-end-line="38" selection-end-column="27" />
           <folding>
             <element signature="n#!!doc;n#Entity#0" expanded="false" />
+            <element signature="n#Entity#0" expanded="false" />
+            <element signature="n#SceneEntity#0" expanded="false" />
+            <element signature="n#Camera#0" expanded="false" />
+            <element signature="n#Light#0" expanded="false" />
+            <element signature="n#ISect#0" expanded="false" />
+            <element signature="n#Surface#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/documentation/RayTracer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="199" column="9" lean-forward="true" selection-start-line="195" selection-start-column="8" selection-end-line="199" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/mathutils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="62" column="44" lean-forward="true" selection-start-line="62" selection-start-column="44" selection-end-line="62" selection-end-column="44" />
+        <state relative-caret-position="577">
+          <caret line="379" column="0" lean-forward="true" selection-start-line="379" selection-start-column="0" selection-end-line="379" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc;n#Vector#0" expanded="false" />
-            <element signature="n#!!block;n#MakeXYZ#0;n#Vector#0" expanded="false" />
-            <element signature="n#!!block;n#MakeFromString#0;n#Vector#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
+            <element signature="e#0#15098#0" expanded="false" />
           </folding>
         </state>
       </provider>
