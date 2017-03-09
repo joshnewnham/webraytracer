@@ -13,6 +13,26 @@ class Vector{
         return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
     }
 
+    static Forward(){
+        return new Vector(0.0, 0.0, 1.0);
+    }
+
+    static Zero(){
+        return new Vector(0.0, 0.0, 0.0);
+    }
+
+    static One(){
+        return new Vector(1.0, 1.0, 1.0);
+    }
+
+    static Up(){
+        return new Vector(0.0, 1.0, 0.0);
+    }
+
+    static Right(){
+        return new Vector(1.0, 0.0, 0.0);
+    }
+
     static CreateXYZ(x, y, z) {
         return new Vector(x, y, z);
     }
@@ -73,6 +93,10 @@ class Vector{
         var len = v.length();
         var div = len == 0 ? Number.MAX_VALUE : 1 / div;
         return Vector3.Multiply(div, v);
+    }
+
+    static Length(v){
+        return Math.sqrt(v.x * v.x + v.y * v.y + v.z * v.z);
     }
 
     static Equals(v1, v2){
@@ -140,6 +164,10 @@ class Color{
 class Ray{
     constructor(position = new Vector(), direction = new Vector()){
         this.position = position;
-        this.dir = direction;
+        this.direction = direction;
+    }
+
+    get start(){
+        return this.position;
     }
 }

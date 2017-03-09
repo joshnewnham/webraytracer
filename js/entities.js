@@ -12,8 +12,9 @@ class Entity{
 }
 
 class SceneEntity extends Entity{
-    constructor(surface=null){
-        super();
+    constructor(position = new Vector(), surface=null){
+        super(position);
+        this.surface = surface;
     }
 
     /**
@@ -33,7 +34,6 @@ class SceneEntity extends Entity{
     normal(position){
         throw "not implemented";
     }
-
 }
 
 class Camera extends Entity{
@@ -65,8 +65,8 @@ class Light extends Entity{
 }
 
 class ISect {
-    constructor(sceneObject=null, ray=null, distance=0.0){
-        this.sceneObject = sceneObject;
+    constructor(sceneEntity=null, ray=null, distance=0.0){
+        this.sceneEntity = sceneEntity;
         this.ray = ray;
         this.distance = distance;
     }
@@ -81,3 +81,65 @@ class Surface{
     }
 }
 
+class SphereEntity extends SceneEntity{
+    constructor(position = new Vector(), surface=null, radius=3.0) {
+        super(position, surface);
+        this.radius = radius;
+    }
+
+    intersect(ray){
+        var eo = Vector.Subtract(this.position, ray.start);
+        var v = Vector.Dot(eo, ray.direction);
+        var dist;
+        if(v < 0){
+            dist = 0.0;
+        } else{
+            var disc = Math.pow(this.radius, 2) - (Vector.Dot(eo, eo) - Math.pow(v, 2));
+            dist = disc < 0 ? 0 : v - Math.sqrt(disc);
+        }
+
+        if(dist == 0) return null;
+
+        return new ISect(this, ray, dist);
+    }
+
+    normal(position){
+        return Vector.Norm(Vector.Subtract(position, this.position));
+    }
+}
+
+class PlaneEntity extends SceneEntity{
+    constructor(position = new Vector(), surface=null, norm = Vector.Up, offset=0.0) {
+        super(position, surface);
+        this.norm = norm;
+        this.offset = offset;
+    }
+
+    intersect(ray){
+        var denom = Vector.Dot(this.norm, ray.direction);
+        if(denom > 0) return null;
+
+        var dist = (Vector.Dot(this.norm, ray.start) + this.offset) / -denom;
+        return new ISect(this, ray, dist);
+    }
+
+    normal(position){
+        return this.norm;
+    }
+}
+
+class Scene {
+    constructor(camera=null){
+        this.entities = new Array();
+        this.lights = new Array();
+        this.camera = camera;
+    }
+
+    Intersect(ray){
+        return this.entities.map((entity) => {
+            return entity.intersect(ray)
+        }).filter((intersect) => {
+            return intersect != null;
+        });
+    }
+}

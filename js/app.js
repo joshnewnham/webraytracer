@@ -6,6 +6,6 @@ var rt;
 
 window.onload = () => {
     "use strict";
-    rt = new RayTracer(document.getElementById("canvas"));
+    rt = new Engine(document.getElementById("canvas"));
     rt.start();
 };
